@@ -99,10 +99,10 @@ pluginBundle {
     tags = listOf("maven", "exec", "cross-platform")
 
     plugins {
-//        mavenExecPlugin { TODO
-//            id = 'com.github.dkorotych.gradle-maven-exec'
-//            displayName = 'Gradle Maven Exec Plugin'
-//        }
+        create("mavenExecPlugin") {
+            id = "com.github.dkorotych.gradle-maven-exec"
+            displayName = "Gradle Maven Exec Plugin"
+        }
     }
 }
 
